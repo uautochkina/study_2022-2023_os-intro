@@ -1,8 +1,8 @@
 ---
 ## Front matter
-title: "Шаблон отчёта по лабораторной работе"
-subtitle: "Простейший вариант"
-author: "Дмитрий Сергеевич Кулябов"
+title: "Отчет по индивидуальному проекту. Этап №1"
+subtitle: "Дисциплина: Операционные системы"
+author: "Уточкина Ульяна Андреевна"
 
 ## Generic otions
 lang: ru-RU
@@ -23,12 +23,12 @@ papersize: a4
 documentclass: scrreprt
 ## I18n polyglossia
 polyglossia-lang:
-  name: russian
-  options:
-	- spelling=modern
-	- babelshorthands=true
+name: russian
+options:
+- spelling=modern
+- babelshorthands=true
 polyglossia-otherlangs:
-  name: english
+name: english
 ## I18n babel
 babel-lang: russian
 babel-otherlangs: english
@@ -45,12 +45,12 @@ monofontoptions: Scale=MatchLowercase,Scale=0.9
 biblatex: true
 biblio-style: "gost-numeric"
 biblatexoptions:
-  - parentracker=true
-  - backend=biber
-  - hyperref=auto
-  - language=auto
-  - autolang=other*
-  - citestyle=gost-numeric
+- parentracker=true
+- backend=biber
+- hyperref=auto
+- language=auto
+- autolang=other*
+- citestyle=gost-numeric
 ## Pandoc-crossref LaTeX customization
 figureTitle: "Рис."
 tableTitle: "Таблица"
@@ -61,59 +61,75 @@ lolTitle: "Листинги"
 ## Misc options
 indent: true
 header-includes:
-  - \usepackage{indentfirst}
-  - \usepackage{float} # keep figures where there are in the text
-  - \floatplacement{figure}{H} # keep figures where there are in the text
----
-
+- \usepackage{indentfirst}
+- \usepackage{float} # keep figures where there are in the text
+- \floatplacement{figure}{H} # keep figures where there are in the text
+-—
 # Цель работы
 
-Здесь приводится формулировка цели лабораторной работы. Формулировки
-цели для каждой лабораторной работы приведены в методических
-указаниях.
+Размещение на GitHub pages заготовки для персонального сайта.
 
-Цель данного шаблона --- максимально упростить подготовку отчётов по
-лабораторным работам.  Модифицируя данный шаблон, студенты смогут без
-труда подготовить отчёт по лабораторным работам, а также познакомиться
-с основными возможностями разметки Markdown.
+# Задачи
 
-# Задание
+- Установить необходимое программное обеспечение.
 
-Здесь приводится описание задания в соответствии с рекомендациями
-методического пособия и выданным вариантом.
+- Скачать шаблон темы сайта.
 
-# Теоретическое введение
+- Разместить его на хостинге git.
 
-Здесь описываются теоретические аспекты, связанные с выполнением работы.
+- Установить параметр для URLs сайта.
 
-Например, в табл. @tbl:std-dir приведено краткое описание стандартных каталогов Unix.
-
-: Описание некоторых каталогов файловой системы GNU Linux {#tbl:std-dir}
-
-| Имя каталога | Описание каталога                                                                                                          |
-|--------------|----------------------------------------------------------------------------------------------------------------------------|
-| `/`          | Корневая директория, содержащая всю файловую                                                                               |
-| `/bin `      | Основные системные утилиты, необходимые как в однопользовательском режиме, так и при обычной работе всем пользователям     |
-| `/etc`       | Общесистемные конфигурационные файлы и файлы конфигурации установленных программ                                           |
-| `/home`      | Содержит домашние директории пользователей, которые, в свою очередь, содержат персональные настройки и данные пользователя |
-| `/media`     | Точки монтирования для сменных носителей                                                                                   |
-| `/root`      | Домашняя директория пользователя  `root`                                                                                   |
-| `/tmp`       | Временные файлы                                                                                                            |
-| `/usr`       | Вторичная иерархия для данных пользователя                                                                                 |
-
-Более подробно об Unix см. в [@gnu-doc:bash;@newham:2005:bash;@zarrelli:2017:bash;@robbins:2013:bash;@tannenbaum:arch-pc:ru;@tannenbaum:modern-os:ru].
+- Разместить заготовку сайта на Github pages.
 
 # Выполнение лабораторной работы
 
-Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. @fig:001).
+1. Скачала архив с репозитория. (рис. [-@fig:001]).
 
-![Название рисунка](image/placeimg_800_600_tech.jpg){#fig:001 width=70%}
+![Скачивание](/home/uautochkina/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/Снимок экрана от 2023-02-22 17-32-30.png){#fig:001 width=70%}
 
-# Выводы
+2. Перенести hugo (рис. [-@fig:002]), (рис. [-@fig:003]).
 
-Здесь кратко описываются итоги проделанной работы.
+![Копирование](/home/uautochkina/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/Снимок экрана от 2023-02-22 17-36-04.png){#fig:002 width=70%}
+
+![В папку bin](/home/uautochkina/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/Снимок экрана от 2023-02-22 17-37-17.png){#fig:003 width=70%}
+
+3. Создание репозитория blog (рис. [-@fig:004]).
+
+![blog](/home/uautochkina/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/Снимок экрана от 2023-02-22 17-41-36.png){#fig:004 width=70%}
+
+4. Удаляем public (рис. [-@fig:005]).
+
+![public](/home/uautochkina/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/Снимок экрана от 2023-02-22 19-09-03.png){#fig:005 width=70%}
+
+5. По ссылке открыла сайт (рис. [-@fig:006]).
+
+![Сайт](/home/uautochkina/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/Снимок экрана от 2023-02-22 19-31-30.png){#fig:006 width=70%}
+
+6. Клонируем репозиторий (рис. [-@fig:007]).
+
+![Клонирование](/home/uautochkina/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/Снимок экрана от 2023-02-22 19-51-18.png){#fig:007 width=70%}
+
+7. Создаем ветку и файл Readme (рис. [-@fig:008]).
+
+![README](/home/uautochkina/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/Снимок экрана от 2023-02-22 19-57-45.png){#fig:008 width=70%}
+
+8. Добавляем public (рис. [-@fig:009]).
+
+![public](/home/uautochkina/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/Снимок экрана от 2023-02-22 20-07-09.png){#fig:009 width=70%}
+
+9. Связываем. (рис. [-@fig:010]).
+
+![github.io](/home/uautochkina/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/Снимок экрана от 2023-02-22 20-09-35.png){#fig:010 width=70%}
+
+# Вывод
+
+В результате лабораторной работы мы разместилиа на GitHub pages заготовки для персонального сайта.
 
 # Список литературы{.unnumbered}
 
+1. [https://www.youtube.com/watch?v=OpsSv0RE3C4](https://www.youtube.com/watch?v=OpsSv0RE3C4)
+
+
 ::: {#refs}
 :::
+
